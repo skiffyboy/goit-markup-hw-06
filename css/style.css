@@ -39,9 +39,9 @@ header {
 }
 
 .container {
-  width: 320px;
-  max-width: 318px;
+  max-width: 320px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Web Studio Logo / HEADER */
@@ -223,10 +223,6 @@ header {
   display: flex;
   gap: 72px;
   flex-wrap: wrap;
-}
-.benefits-li {
-  width: 100%;
-  padding-right: 16px;
 }
 .ben-title {
   color: var(--NAVY-BLUE, #2e2f42);
