@@ -237,19 +237,22 @@ header {
 /* Team Section / Our Portfolio Section / Section 3 */
 .team {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .ul-team {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .li-team {
+  display: flex;
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  flex-wrap: wrap;
+  align-items: center;
 }
 .team-div {
   padding: 32px 0 32px;
@@ -268,6 +271,7 @@ header {
   gap: 24px;
   margin-top: 8px;
   justify-content: center;
+  padding: 0 16px;
 }
 
 .eclipse-item {
@@ -763,12 +767,13 @@ header {
     text-align: left;
   }
 }
-
+/* ===========Desktop Settings=========== */
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     margin: 0 auto;
   }
+  /* ==============Desktop Section 2====================*/
   .benefits {
     background-color: #fff;
     padding-top: 120px;
@@ -807,4 +812,5 @@ header {
     letter-spacing: 0.02em;
     color: #434455;
   }
+  /* ==============Desktop Section 3====================*/
 }
