@@ -46,7 +46,7 @@ header {
   max-width: 320px;
 }
 
-/* Web Studio Logo / HEADER */
+/* =====================Web Studio Logo / HEADER=================== */
 .studio-section {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -139,9 +139,9 @@ header {
   font-style: normal;
 }
 
-/* Body */
+/* =========================Body========================================== */
 
-/* Effective Solution Section / SECTION 1*/
+/*============== Effective Solution Section / SECTION 1========*/
 .effective-solution {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -166,7 +166,7 @@ header {
   max-width: 496px;
   margin: 0 auto 48px;
 }
-/* Button Settings */
+/* ==============Button Settings================ */
 .button-sol {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -190,7 +190,7 @@ header {
 .button-sol:focus {
   background-color: #404bbf;
 }
-/* Benefits Section  SECTION 2*/
+/* ===================Benefits Section  SECTION 2======================*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -236,7 +236,7 @@ header {
   letter-spacing: 0.32px;
 }
 
-/* Team Section / Our Portfolio Section / Section 3 */
+/* =====================Team Section / Our Portfolio Section / Section 3===================== */
 .team {
   background-color: #f4f4fd;
   padding-bottom: 96px;
@@ -311,7 +311,7 @@ header {
   fill: #f4f4fd;
 }
 
-/* Section 4 */
+/* ===================Section 4=================== */
 .portfolio-section {
   padding-bottom: 96px;
 }
@@ -374,23 +374,23 @@ header {
   font-size: 16px;
 }
 
-/* Footer */
+/* =====================Footer====================== */
 .footer-section {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-  display: inline-block;
-  margin-bottom: 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 .span-studio-footer {
   color: #f4f4fd;
@@ -400,13 +400,20 @@ header {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-top: 17.5px;
 }
 .footer-container {
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
-.footer-container-box {
-  margin-right: 120px;
+.footer-social {
+  flex-basis: 100%;
+  display: block;
+  margin-bottom: 72px;
+  margin-top: 72px;
+  text-align: center;
 }
 .social-p {
   font-size: 16px;
@@ -419,6 +426,7 @@ header {
 .footer-social-ul {
   gap: 16px;
   display: flex;
+  justify-content: center;
 }
 .footer-social-li {
   width: 40px;
@@ -443,17 +451,15 @@ header {
 .footer-social-a:focus {
   background-color: #31d0aa;
 }
-/* Input */
+/* ===================Input================ */
+
 .form-input {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
   gap: 24px;
 }
-.input-class {
-  margin-left: 80px;
-}
 .input-inside-label {
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: #2e2f42;
   border-radius: 4px;
@@ -467,15 +473,16 @@ header {
   letter-spacing: 0.04em;
   color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  opacity: 0.6;
 }
 .input-label ::placeholder {
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2; /* 200% */
+  line-height: 2;
   letter-spacing: 0.48px;
-  color: #ffffff;
 }
+
 .input-svg {
   margin-left: 16px;
 }
@@ -486,6 +493,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .subscribe-button {
@@ -506,6 +514,7 @@ header {
   letter-spacing: 0.04em;
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 .subscribe-button:hover {
   background-color: #404bbf;
@@ -521,7 +530,7 @@ header {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.64px;
 }
-/* Backdrop */
+/* =========================Backdrop======================= */
 .backdrop {
   width: 100%;
   height: 100%;
@@ -910,7 +919,6 @@ header {
     padding-bottom: 120px;
   }
   .main-section-name {
-    padding-top: 120px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
