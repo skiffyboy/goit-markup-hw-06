@@ -54,9 +54,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-grow: 1;
 }
 .header-container {
+  max-width: 320px;
+  height: 56px;
   display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
 }
 
 .web-studio-logo {
@@ -67,7 +72,6 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 .span-studio {
   color: #2e2f42;
@@ -83,6 +87,7 @@ header {
   letter-spacing: 0.02em;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
 }
 .studio-nav-link {
   color: #404bbf;
@@ -108,7 +113,6 @@ header {
 }
 .nav-ul {
   display: flex;
-  gap: 40px;
 }
 
 .adress-link {
@@ -118,6 +122,7 @@ header {
   letter-spacing: 0.02em;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
 }
 .adress-link:hover {
   color: #404bbf;
@@ -137,6 +142,15 @@ header {
 .header-adress {
   margin-left: auto;
   font-style: normal;
+}
+
+.header-nav-menu-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /* =========================Body========================================== */
@@ -266,6 +280,7 @@ header {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 .team-div {
   padding: 32px 0 32px;
@@ -768,6 +783,54 @@ header {
     max-width: 768px;
     margin: 0 auto;
   }
+  /* ================== Laptop Header Section  ============ */
+  .header-container {
+    height: 72px;
+    display: flex;
+  }
+  .header-nav {
+    display: flex;
+    flex-grow: 0;
+    gap: 120px;
+  }
+  .header-nav-menu-button {
+    display: none;
+  }
+  .nav-link {
+    position: relative;
+    padding: 24px 0;
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-ul {
+    display: flex;
+    gap: 40px;
+  }
+  .studio-nav-link {
+    color: #404bbf;
+  }
+
+  .adress-link {
+    display: flex;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   /* ================== Laptop Section 1 ============ */
   .effective-sol-title {
     font-size: 56px;
@@ -794,6 +857,9 @@ header {
   .li-team {
     max-width: 264px;
     width: calc((100% - 24px) / 2);
+  }
+  .container team {
+    padding-bottom: 0px;
   }
   /* ================== Laptop Section 4 ============ */
   .portfolio-ul {
@@ -827,6 +893,21 @@ header {
   .container {
     max-width: 1158px;
     margin: 0 auto;
+  }
+
+  /* ==============Desktop Section Header====================*/
+  .adress-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-adress {
+    display: flex;
+  }
+  .adress-link {
+    font-size: 16px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
   }
   /* ==============Desktop Section 1====================*/
   .effective-solution {
