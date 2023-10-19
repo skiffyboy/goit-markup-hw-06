@@ -829,7 +829,17 @@ header {
     margin: 0 auto;
   }
   /* ==============Desktop Section 1====================*/
-
+  .effective-solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 188px 0;
+    min-width: 1158px;
+    max-width: 1440px;
+  }
   /* ==============Desktop Section 2====================*/
   .benefits {
     background-color: #fff;
