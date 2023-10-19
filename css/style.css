@@ -152,6 +152,145 @@ header {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+/* ============= Mobile Header Menu Block Addition(Currently hidden)============ */
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-left: 16px;
+  padding-right: 24px;
+  display: flex;
+  padding: 72px 24px 40px 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.is-open {
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 233, 252, 0.1);
+  fill: #2f2f37;
+  stroke-width: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close-btn:hover {
+  color: #404bbf;
+}
+.menu-close-btn:focus {
+  color: #404bbf;
+}
+.mob-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-list-item {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.mob-list-link {
+  text-decoration: none;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.mob-list-item:first-child .mob-list-link {
+  color: #404bbf;
+}
+
+.mob-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mob-address-link {
+  color: #434455;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-adress-item:first-child .mob-address-link {
+  color: #404bbf;
+}
+
+.menu-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-social-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.menu-social-box,
+.menu-social-box::after,
+.menu-social-box::before {
+  box-sizing: border-box;
+}
+.menu-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-circle:hover .footer-circle:focus {
+  background-color: #31d0aa;
+}
+
+.menu-icons-list .footer-circle:hover,
+.menu-icons-list .footer-circle:focus {
+  background-color: #31d0aa;
+}
 
 /* =========================Body========================================== */
 
@@ -830,6 +969,18 @@ header {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+  .mob-menu {
+    display: none;
+  }
+
+  .mob-menu-btn {
+    display: none;
+  }
+
+  .mob-btn-icon {
+    visibility: hidden;
+    display: none;
   }
   /* ================== Laptop Section 1 ============ */
   .effective-sol-title {
