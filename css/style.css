@@ -309,7 +309,17 @@ header {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile/banner-bg-320@2x.jpg");
+  }
+}
 .effective-sol-title {
   text-align: center;
   color: #fff;
@@ -1005,6 +1015,31 @@ header {
     font-size: 56px;
     max-width: 496px;
   }
+  .effective-solution {
+    background-color: #2e2f42;
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/tablet/banner-bg-768@2x.jpg");
+    }
+  }
   /* ================== Laptop Section 2 ============ */
   .benefits-ul {
     display: flex;
@@ -1096,6 +1131,17 @@ header {
     padding: 188px 0;
     min-width: 1158px;
     max-width: 1440px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/desctop/banner-bg-1158@2x.jpg");
+    }
   }
   /* ==============Desktop Section 2====================*/
   .benefits {
