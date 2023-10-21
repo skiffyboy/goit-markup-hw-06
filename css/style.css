@@ -1193,6 +1193,7 @@ header {
   .team {
     background-color: #f4f4fd;
     padding-bottom: 120px;
+    padding-top: 120px;
   }
   .ul-team {
     display: flex;
@@ -1217,7 +1218,6 @@ header {
     text-align: center;
   }
   .main-section-name {
-    padding-top: 120px;
     text-align: center;
     color: rgba(46, 47, 66, 1);
     font-size: 36px;
@@ -1260,9 +1260,7 @@ header {
     fill: #f4f4fd;
   }
   /* ==============Desktop Section 4====================*/
-  .portfolio-section {
-    padding-bottom: 120px;
-  }
+
   .main-section-name {
     font-size: 36px;
     line-height: 1.11;
@@ -1329,6 +1327,10 @@ header {
     letter-spacing: 0.02em;
     line-height: 1.5;
     font-size: 16px;
+  }
+  .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   /* ==============Desktop Footer Section ====================*/
   .footer-section {
