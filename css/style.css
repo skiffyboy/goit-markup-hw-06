@@ -404,9 +404,9 @@ header {
 .team {
   background-color: #f4f4fd;
   padding-bottom: 96px;
+  padding-top: 96px;
 }
 .main-section-name {
-  padding-top: 96px;
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -420,6 +420,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 .li-team {
   background-color: #ffffff;
@@ -477,6 +478,7 @@ header {
 /* ===================Section 4=================== */
 .portfolio-section {
   padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .portfolio-ul {
@@ -1073,12 +1075,17 @@ header {
     width: calc((100% - 24px) / 2);
   }
   /* ================== Laptop Footer Section  ============ */
+
   .footer-social {
     flex-basis: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .footer-container {
     gap: 72px 24px;
-    padding-left: 108px;
+    width: 768px;
+    display: flex;
+    justify-content: center;
   }
   .p-sub {
     text-align: left;
@@ -1176,9 +1183,11 @@ header {
   }
   .ben-paragraph {
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    width: 264px;
   }
   /* ==============Desktop Section 3====================*/
   .team {
@@ -1338,7 +1347,6 @@ header {
     text-transform: uppercase;
     color: #4d5ae5;
     display: inline-block;
-    margin-bottom: 16px;
   }
   .span-studio-footer {
     color: #f4f4fd;
@@ -1356,6 +1364,9 @@ header {
     flex-wrap: nowrap;
     padding-left: 15px;
     gap: 0px;
+    width: 1440px;
+
+    justify-content: center;
   }
   .social-p {
     font-size: 16px;
